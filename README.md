@@ -6,6 +6,12 @@
 pip3 install jiale0709
 ```
 
+## Upgrade Library
+
+```
+pip3 install jiale0709 --upgrade
+```
+
 ## Usage
 
 ```
