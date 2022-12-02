@@ -1,5 +1,4 @@
 # Jia Le's Library for Python
-[![Documentation Status](https://readthedocs.org/projects/python-jiale0709/badge/?version=latest)](https://python-jiale0709.readthedocs.io/en/latest/?badge=latest)
 
 ## Installation
 
