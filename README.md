@@ -1,5 +1,5 @@
 # Jia Le's Library for Python
-
+[![Documentation Status](https://readthedocs.org/projects/jia-les-python-library/badge/?version=latest)](https://jia-les-python-library.readthedocs.io/en/latest/?badge=latest)
 ## Installation
 
 ```
