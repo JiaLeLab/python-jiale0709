@@ -5,20 +5,22 @@ def info():
     print('Github : JiaLe0709, JiaLeLab')
     
 def version():
-    print('Jia Le Version : v0.0.6') 
-    print('Release Date : 11/30/2022')
+    print('Jia Le Version : v0.0.7') 
+    print('Release Date : 12/3/2022')
 
 def index():
     print("\u0332".join("Index-Note"))
-    print('You can add p before the data [ Example: padd(5,5) ]to straight away get the result whithout print. Except: \n- multiplication \n- division')
+    print('You can add p before the data [ Example: padd(5,5) ]to straight away get the result whithout print. Except Example: \n- multiplication \n- division')
     print("\u0332".join("Index-Basic Math"))
     print('\n- add / plus \n- substract / minus \n- multiply / times \n- divide \n- discount \n- multiplication \n- division \n')
     print("\u0332".join("Index-Polygon & 3-Dimension"))   
     print('\n- interior \n- exterior \n- circumference2 / circumference 3 (2 for 22/7 , 3 for 3.14)')
+    print("\u0332".join("Common-Life Math"))   
+    print('\n- bmi')
     
 def formula():
     print("\u0332".join("Formula"))    
-    print('\n Sum of Interior Angles ((n-2) x 180°) \n Sum of Exterior Angles (360 ÷ numbers of side) \n Circumference (2πr)')
+    print('\n Sum of Interior Angles ((n-2) x 180°) \n Sum of Exterior Angles (360 ÷ numbers of side) \n Circumference (2πr) \n BMI (weight(kg) ÷ (height(m) ** 2))')
 
 def help():
     print("\u0332".join("Help"))
@@ -136,3 +138,22 @@ def multiplication(number):
 def division(number):
     for d in range(1,13):
         print(number,"÷",d,'=',(number / d))
+
+# BMi Calculator (BMI = weight ÷ height ^2),(weight / height**2)
+def bmi(weight,height):
+    # Using rbmi as Result of BMI
+    rbmi = weight / (height ** 2)
+    print('BMI : ',rbmi)
+    # BMI Result
+    # (<18.5 is Underweight)
+    if rbmi <= 18.5:
+        print('You are Underweight.')
+    # (> 18.5 – 24.9 is Normal weight)
+    elif rbmi > 18.5 and rbmi < 25:
+        print('Your are in Normal weight.')
+    # (> 25 - 29.9 is Overweight)
+    elif rbmi >= 25 and rbmi < 30:
+        print('You are Overweight.')
+    # (> 30 is Obesity)
+    else:
+        print('You are Obesity.')

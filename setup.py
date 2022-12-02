@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="jiale0709",                     
-    version="0.0.6",                      
+    version="0.0.7",                      
     author="Jia Le",                  
     description="Jia Le's Python Library",
     long_description=long_description,      
