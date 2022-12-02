@@ -1,5 +1,6 @@
 # Jia Le's Library for Python
-[![Documentation Status](https://readthedocs.org/projects/jia-les-python-library/badge/?version=latest)](https://jia-les-python-library.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/jia-les-python-library/badge/?version=latest)](https://jia-les-python-library.readthedocs.io/en/latest/?badge=latest) [![License: MIT](https://img.shields.io/badge/License-MIT-applegreen.svg)](https://github.com/JiaLeLab/python-jiale0709/blob/02107b69dca74ed8ff74306a219ee94b724f0b3a/LICENSE)
+
 ## Installation
 
 ```
