@@ -5,139 +5,100 @@ def info():
     print('Github : JiaLe0709, JiaLeLab')
     
 def version():
-    print('Jia Le Version : v0.0.7') 
-    print('Release Date : 12/3/2022')
+    print('Jia Le Version : v0.0.8') 
+    print('Release Date : 12/4/2022')
 
 def index():
     print("\u0332".join("Index-Note"))
-    print('You can add p before the data [ Example: padd(5,5) ]to straight away get the result whithout print. Except Example: \n- multiplication \n- division')
     print("\u0332".join("Index-Basic Math"))
     print('\n- add / plus \n- substract / minus \n- multiply / times \n- divide \n- discount \n- multiplication \n- division \n')
     print("\u0332".join("Index-Polygon & 3-Dimension"))   
     print('\n- interior \n- exterior \n- circumference2 / circumference 3 (2 for 22/7 , 3 for 3.14)')
     print("\u0332".join("Common-Life Math"))   
-    print('\n- bmi')
+    print('\n- bmi \n- mm_cm, mm_m, mm_km \n- cm_mm, cm_m, cm_km \n- km_m, km_cm, km_mm')
     
 def formula():
     print("\u0332".join("Formula"))    
     print('\n Sum of Interior Angles ((n-2) x 180°) \n Sum of Exterior Angles (360 ÷ numbers of side) \n Circumference (2πr) \n BMI (weight(kg) ÷ (height(m) ** 2))')
+    print(" Millimetre to Centimeter (Divide the length value by 10) \n Millimetre to Meter (Divide the length value by 1000) \n Millimetre to Kilometer (Divide the length value by 1e+6)")
+    print(' Centimeter to Millimetre (Multiply the length value by 10) \n Centimeter to Meter (Divide the length value by 100) \n Centimeter to Kilometer (Divide the length value by 100000) ')
+    print(' Kilometer to Millimetre (Multiply the length value by 1e+6) \n Kilometer to Centimeter (Multiply the length value by 100000) \n Kilometer to Meter (Multiply the length value by 1000)')
 
 def help():
     print("\u0332".join("Help"))
     print("How to use the information data of Jia Le's Library ?")
     print('\nYou can use all of this key to help you: \n info() \n version() \n index() \n formula()')
         
-'''
-Basic Math Libraries.
-Only work when using Print (for in-case of join another data)
-'''
+
 # Math: Add, Plus (+) 
 def add(num1, num2):
-    return num1 + num2    
+    print(num1 + num2) 
 
 def plus(num1,num2):    
-    return num1 + num2  
+    print(num1 + num2) 
 
 # Math: Substract, Minus (-)
 def substract(num1, num2):
-    return num1 - num2
+    print(num1 - num2)
 
 def minus(num1, num2):
-    return num1 - num2
+    print(num1 - num2)
 
 # Math: Multiply, Times (x, *)
 def multiply(num1, num2):
-    return num1 * num2
+    print(num1 * num2)
 
 def times(num1, num2):
-    return num1 * num2
+    print(num1 * num2)
 
 # Math: Divide (÷, /)
 def divide(num1, num2):
-    return num1 / num2
-
-''' Can run in without Print (It will straight away print out the output when running the code, You Don't need use "print" but you only can using p+[data]) '''
-
-# Math: Add, Plus (+) 
-def padd(num1, num2):
-    print(num1 + num2) 
-
-def pplus(num1,num2):    
-    print(num1 + num2) 
-
-# Math: Substract, Minus (-)
-def psubstract(num1, num2):
-    print(num1 - num2)
-
-def pminus(num1, num2):
-    print(num1 - num2)
-
-# Math: Multiply, Times (x, *)
-def pmultiply(num1, num2):
-    print(num1 * num2)
-
-def ptimes(num1, num2):
-    print(num1 * num2)
-
-# Math: Divide (÷, /)
-def pdivide(num1, num2):
     print(num1 / num2)
 
-''' Libraries of Polygon. '''
+
+# Math: Polygon.
 # Sum of Interior Angles ((n-2) x 180°)
 def interior(n):
-    return ((n - 2) * 180)
+    itr_rslt = ((n - 2) * 180)
+    print(f'Interior = {itr_rslt}')
 
 # Sum of Exterior Angles (360 ÷ numbers of side)
 def exterior(numbers_of_side):
-    return (360 / numbers_of_side)
+    etr_rslt = (360 / numbers_of_side)
+    print(f'Exterior = {etr_rslt}')
 
-''' Can run in without Print (It will straight away print out the output when running the code, You Don't need use "print" but you only can using p+[data]) '''
-# Sum of Interior Angles ((n-2) x 180°)
-def pinterior(n):
-    print((n - 2) * 180)
 
-# Sum of Exterior Angles (360 ÷ numbers of side)
-def pexterior(numbers_of_side):
-    print(360 / numbers_of_side)
-
-''' Libraries of Three-dimensional. '''
-# Math: Circumference (2πr) *for 2 & 3 mean (22/7) & (3.14)
+# Math: Libraries of Three-dimensional.
+# Circumference (2πr) *for 2 & 3 mean (22/7) & (3.14)
 def circumference2(radius):
-    return (2 * (22/7) * radius)
+    cir_rslt = (2 * (22/7) * radius)
+    print(f'Circumference = {cir_rslt}')
 
 def circumference3(radius):
-    return (2 * 3.14 * radius)
+    cir_rslt = (2 * 3.14 * radius)
+    print(f'Circumference = {cir_rslt}')
 
-''' Can run in without Print (It will straight away print out the output when running the code, You Don't need use "print" but you only can using p+[data]) '''
-# Math: Circumference (2πr) *for 2 & 3 mean (22/7) & (3.14)
-def pcircumference2(radius):
-    return (2 * (22/7) * radius)
 
-def pcircumference3(radius):
-    return (2 * 3.14 * radius)
-
-''' Counting System '''
 # Discount System
 def discount(price, discount):
-    return (price / 100 * discount)
+    dct_rslt = (price / 100 * discount)
+    print(f'Price : {dct_rslt}')
 
-''' Can run in without Print (It will straight away print out the output when running the code, You Don't need use "print" but you only can using p+[data]) '''
-# Discount System
-def pdiscount(price, discount):
-    print(price / 100 * discount)
 
 # Math: Multiplication,Division Table
-'''(12 lines only & Cannot using print.)'''
 # Multiplication Table
-def multiplication(number):
-    for m in range(1,13):
-        print(number,"x",m,'=',(number * m))
+def multiplication(number,Range):
+    rng = Range + 1
+    for m in range(1,rng):
+        print(f'Multiplication Table of {number}')
+        print(number,"x",m,'=',(number * m))      
 
 # Division Table
-def division(number):
-    for d in range(1,13):
+def division(number,Range):
+    rng = Range + 1
+    for d in range(1,rng):
         print(number,"÷",d,'=',(number / d))
+
 
 # BMi Calculator (BMI = weight ÷ height ^2),(weight / height**2)
 def bmi(weight,height):
@@ -157,3 +118,44 @@ def bmi(weight,height):
     # (> 30 is Obesity)
     else:
         print('You are Obesity.')
+
+
+# Coverter of length (mm -cm, m, km | cm - mm,km | km - cm, mm)
+# mm - cm, m, km
+def mm_cm(mm):
+    conv_res =  mm / 10
+    print(f'MM to CM = {conv_res} cm')
+    
+def mm_m(mm):
+    conv_res =  mm / 1000
+    print(f'MM to M = {conv_res} m')
+    
+def mm_km(mm):
+    conv_res =  mm / 1e+6
+    print(f'MM to KM = {conv_res} km')    
+    
+# cm - mm, m, km    
+def cm_mm(cm):
+    conv_res = cm * 10
+    print(f'CM to MM = {conv_res} mm')
+    
+def cm_m(cm):
+    conv_res = cm / 100
+    print(f'CM to M = {conv_res} m')
+
+def cm_km(cm):
+    conv_res = cm / 100000
+    print(f'CM to KM = {conv_res} km')
+
+# km - mm, cm, m
+def km_mm(km):
+    conv_res = km * 1000000
+    print(f'KM to MM = {conv_res} mm')
+    
+def km_cm(km):
+    conv_res = km * 100000
+    print(f'KM to CM = {conv_res} cm')
+
+def km_m(km):
+    conv_res = km * 1000
+    print(f'KM to M = {conv_res} m')
