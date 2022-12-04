@@ -6,17 +6,26 @@
 ```
 pip3 install jiale0709
 ```
+```
+pip3 install jiale
+```
 
 ## Upgrade Library
 
 ```
 pip3 install jiale0709 --upgrade
 ```
+```
+pip3 install jiale --upgrade
+```
 
 ## Usage
 
 ```
 from jiale0709 import *
+```
+```
+from jiale import *
 ```
 
 ## Get Started
