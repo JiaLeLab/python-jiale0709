@@ -5,29 +5,19 @@ def info():
     print('Github : JiaLe0709, JiaLeLab')
     
 def version():
-    print('Jia Le Version : v0.0.8') 
+    print('Jia Le Version : v0.0.9') 
     print('Release Date : 12/4/2022')
 
 def index():
-    print("\u0332".join("Index-Note"))
-    print("\u0332".join("Index-Basic Math"))
-    print('\n- add / plus \n- substract / minus \n- multiply / times \n- divide \n- discount \n- multiplication \n- division \n')
-    print("\u0332".join("Index-Polygon & 3-Dimension"))   
-    print('\n- interior \n- exterior \n- circumference2 / circumference 3 (2 for 22/7 , 3 for 3.14)')
-    print("\u0332".join("Common-Life Math"))   
-    print('\n- bmi \n- mm_cm, mm_m, mm_km \n- cm_mm, cm_m, cm_km \n- km_m, km_cm, km_mm')
+    raise RuntimeError("The Jia Le Library for Python no longer supports index(), but you can get the index by refering our docs.")
     
 def formula():
-    print("\u0332".join("Formula"))    
-    print('\n Sum of Interior Angles ((n-2) x 180°) \n Sum of Exterior Angles (360 ÷ numbers of side) \n Circumference (2πr) \n BMI (weight(kg) ÷ (height(m) ** 2))')
-    print(" Millimetre to Centimeter (Divide the length value by 10) \n Millimetre to Meter (Divide the length value by 1000) \n Millimetre to Kilometer (Divide the length value by 1e+6)")
-    print(' Centimeter to Millimetre (Multiply the length value by 10) \n Centimeter to Meter (Divide the length value by 100) \n Centimeter to Kilometer (Divide the length value by 100000) ')
-    print(' Kilometer to Millimetre (Multiply the length value by 1e+6) \n Kilometer to Centimeter (Multiply the length value by 100000) \n Kilometer to Meter (Multiply the length value by 1000)')
+    raise RuntimeError("The Jia Le Library for Python no longer supports formula(), but you can get the formula by refering our docs.")
 
 def help():
     print("\u0332".join("Help"))
     print("How to use the information data of Jia Le's Library ?")
-    print('\nYou can use all of this key to help you: \n info() \n version() \n index() \n formula()')
+    print('\nYou can use all of this key to help you: \n info() \n version() \n')
         
 
 # Math: Add, Plus (+) 
@@ -90,7 +80,6 @@ def discount(price, discount):
 def multiplication(number,Range):
     rng = Range + 1
     for m in range(1,rng):
-        print(f'Multiplication Table of {number}')
         print(number,"x",m,'=',(number * m))      
 
 # Division Table
@@ -116,7 +105,7 @@ def bmi(weight,height):
     elif rbmi >= 25 and rbmi < 30:
         print('You are Overweight.')
     # (> 30 is Obesity)
-    else:
+    elif rbmi >= 30:
         print('You are Obesity.')
 
 
@@ -159,3 +148,31 @@ def km_cm(km):
 def km_m(km):
     conv_res = km * 1000
     print(f'KM to M = {conv_res} m')
+
+# Time converter
+# Seconds - Minutes, Hours
+def sec_min(Second):
+    conv_res = Second / 60
+    print(f'Second to Minute = {conv_res} Minutes')
+
+def sec_hour(Second):
+    conv_res = Second / 3600
+    print(f'Second to Hour = {conv_res} Hours')
+
+# Minutes - Seconds, Hours
+def min_sec(Minutes):
+    conv_res = Minutes * 60
+    print(f'Minute to Second = {conv_res} Seconds')
+    
+def min_hour(Minutes):
+    conv_res = Minutes / 60
+    print(f'Minute to Hour = {conv_res} Hours')
+
+# Hours - Seconds, Minutes
+def hour_sec(Hours):
+    conv_res = Hours * 3600
+    print(f'Hour to Second = {conv_res} Seconds')
+    
+def hour_min(Hours):
+    conv_res = Hours * 60
+    print(f'Hour to Minute = {conv_res} Minutes')
