@@ -1,5 +1,5 @@
 # Jia Le's Library for Python
-[![License: MIT](https://img.shields.io/badge/License-MIT-applegreen.svg)](https://github.com/JiaLeLab/pythonjiale0709/blob/02107b69dca74ed8ff74306a219ee94b724f0b3a/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-applegreen.svg)](https://github.com/JiaLeLab/python-jiale0709/blob/30dc808302648733e408bb859f6c7f634c5e726e/LICENSE)
 
 ## Installation
 
